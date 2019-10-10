@@ -1,0 +1,37 @@
+header {
+  background: $color2;
+  display: flex;
+  flex-flow: column nowrap;
+  .menu {
+    background: darken($color2, 10%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    &__link {
+      padding: 1rem;
+    }
+  }
+
+  .banner {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 20vh;
+    padding: 1rem;
+    .help {
+      flex: 1;
+    }
+    .logo {
+      flex: 1;
+      align-self: center;
+    }
+    .call-to-action {
+      flex: 1;
+      align-self: flex-end;
+      text-align: right;
+      &__button {
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}
