@@ -1,11 +1,7 @@
 header {
-  background: $color2;
-  display: flex;
-  flex-flow: column nowrap;
+  background: $color2;  
   .menu {
-    background: darken($color2, 10%);
-    display: flex;
-    justify-content: space-between;
+    background: darken($color2, 10%);    
     padding: 1rem;
     &__link {
       padding: 1rem;
@@ -18,25 +14,18 @@ header {
     }
   }
 
-  .banner {
-    display: flex;
-    flex-flow: row nowrap;
+  .banner {    
     height: 20vh;
     padding: 1rem;
     .help {
-      flex: 1;
+
     }
     .logo {
-      flex: 1;
-      align-self: center;
+      
     }
-    .call-to-action {
-      flex: 1;
-      align-self: flex-end;
-      text-align: right;
+    .call-to-action {     
       &__button {
-        padding: 0.5rem;
-        
+        padding: 0.5rem;        
         background: darken($color2, 10%);
         border: 1px solid #fff;
         border-radius: 0.5rem;
