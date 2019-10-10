@@ -7,6 +7,20 @@ footer {
   justify-content: space-between;
   div {
     background: $color5;
+    color: set-text-color($color5);
     padding: 1rem;
+    border: 1px solid $color4;
+  }
+  .links {
+    flex: 1;
+    order: 1;
+  }
+  .contact-details {
+    flex: 2;
+    order: 0;
+  }
+  .social-links {
+    flex: 1;
+    order: 2;
   }
 }

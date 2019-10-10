@@ -14,15 +14,16 @@ main {
 }
 
 header {
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   width: 80%;
+
 }
 
 .photos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   &__photo {
     width: 300px;
     height: 300px;
@@ -30,5 +31,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  &__empty {
+    width: 300px;
+  }
+
+}
+
+.articles {
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  article {
+    margin-bottom: 1rem;
+    flex: 1;
+    
   }
 }

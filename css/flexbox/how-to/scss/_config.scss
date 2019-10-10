@@ -14,3 +14,15 @@ $color5: rgba(247, 203, 21, 1);
   margin: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
+@function set-text-color($color) {
+  @debug "Lightness #{lightness($color)}";
+  @if lightness($color) > 40 {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
