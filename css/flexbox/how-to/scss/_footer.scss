@@ -1,7 +1,11 @@
 footer {
   background: $color1;
-  width: 80%;
-  margin: 0 auto;  
+  width: 900px;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   div {
     background: $color5;
     color: set-text-color($color5);
@@ -9,9 +13,12 @@ footer {
     border: 1px solid $color4;
   }
   .links {
+    flex: 1 0 33%;    
   }
   .contact-details {
+    flex: 1 0 33%;    
   }
   .social-links {
+    flex: 1 0 33%;    
   }
 }
