@@ -1,0 +1,62 @@
+@import 'config';
+@import 'header';
+@import 'footer';
+
+body {
+  background: $color4;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 900px;
+}
+
+header {
+  margin: 0 auto 1rem auto;
+  width: 900px;
+}
+
+.photos {  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  &__photo {
+    background: $color3;
+    border: 1px solid darken($color3, 20%);
+    width: 280px;
+    height: 280px;
+    margin-bottom: 1rem;
+    &-first {
+      @extend .photos__photo;
+      order: 1;
+    }
+    &-last {
+      @extend .photos__photo;
+      order: -1;
+    }
+  }
+
+  &__empty {
+    width: 220px;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__one {
+  }
+  &__two {
+    order: -1;
+  }
+  &__three {
+    order: 1;
+  }
+
+  article {
+    margin-bottom: 1rem;
+  }
+}

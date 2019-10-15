@@ -1,0 +1,28 @@
+$primary-color: #3d3d3d;
+$secondary-color: #fff;
+
+/* RGB */
+$color1: rgba(0, 75, 168, 1);
+$color2: rgba(245, 93, 62, 1);
+$color3: rgba(135, 142, 136, 1);
+$color4: rgba(99, 112, 129, 1);
+$color5: rgba(247, 203, 21, 1);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+@function set-text-color($color) {
+  @debug "Lightness #{lightness($color)}";
+  @if lightness($color) > 40 {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
