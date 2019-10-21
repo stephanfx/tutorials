@@ -1,0 +1,19 @@
+@import 'config';
+
+.container {
+  background: #ddd;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh auto 60px;  
+  align-content: stretch;
+  gap: 5px;
+}
+
+.items {
+  background: #666;
+  
+}
+
+.items:nth-child(odd) {
+  background: #999;  
+}
